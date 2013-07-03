@@ -1,6 +1,6 @@
 filterfactor = {
   tCurrentPage: 1,
-  tCurrentPageSize: 9,
+  tCurrentPageSize: 12,
   tCurrentFilterArray: [],
   tCurrentParameterSpString: '_____PARAMETERS_____',
   tCurrentValueSpString: '_____VALUES_____',
@@ -133,11 +133,17 @@ filterfactor = {
             var tFactoryHTML = tFilterFactoryCont1Obj.html();
             if (tFactoryHTML)
             {
-              tFactoryHTML = tFactoryHTML.replace(/\{\$detail_link\}/g, tDataListArray[ti]['detail_link']);
-              tFactoryHTML = tFactoryHTML.replace(/\{\$image_url\}/g, tDataListArray[ti]['image_url']);
-              tFactoryHTML = tFactoryHTML.replace(/\{\$name\}/g, tDataListArray[ti]['name']);
-              tFactoryHTML = tFactoryHTML.replace(/\{\$sizes\}/g, tDataListArray[ti]['sizes']);
+              tFactoryHTML = tFactoryHTML.replace(/%7B/g, '{');
+              tFactoryHTML = tFactoryHTML.replace(/%7D/g, '}');
+              tFactoryHTML = tFactoryHTML.replace(/\{\$\-category\-product\-folder\}/g, tDataListArray[ti]['-category-product-folder']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$\-category\-product\-abs\-folder\}/g, tDataListArray[ti]['-category-product-abs-folder']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$notclickable\}/g, tDataListArray[ti]['notclickable']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$\-notclickable\-text\}/g, tDataListArray[ti]['-notclickable-text']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$property_topid\}/g, tDataListArray[ti]['property_topid']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$property_topid_filetype\}/g, tDataListArray[ti]['property_topid_filetype']);
               tFactoryHTML = tFactoryHTML.replace(/\{\$topic\}/g, tDataListArray[ti]['topic']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$subtopic\}/g, tDataListArray[ti]['subtopic']);
+              tFactoryHTML = tFactoryHTML.replace(/\{\$state\}/g, tDataListArray[ti]['state']);
               if (tCurrentIndexK % 3 != 0) tFactoryHTML = tFactoryHTML.replace(/\{\$\-plugin\-string\-1\}/g, '');
               else
               {

@@ -49,7 +49,6 @@ body{ font-size:12px;font-family:Arial,"宋体"; color:#333; background:#f0f0f0;
 ul.categ_navi{ width:245px; font-size:16px; color:#fff; }
 ul.categ_navi li{width:245px; height:40px; line-height:40px; text-indent:0.9em; background:url(../images/categories/left_navbg.gif) no-repeat;}
 ul.categ_navi li a{ color:#fff; display:block; text-decoration:none;}
-ul.categ_navi li.current{ width:245px; height:40px; background:url(../images/categories/left_navbg2.gif) no-repeat;}
 .categ_filter{ padding-top:20px;}
 .filter_ti{ background:url(../images/categories/left_tibg.gif) no-repeat; color:#fff;text-indent:1.2em; height:28px; line-height:30px;}
 .filter_box{width:243px; height:auto; background:#fff;border:1px #434343 solid; border-top:none; padding-top:5px; overflow:hidden;}
@@ -79,7 +78,7 @@ background:url(../images/categories/left_iconbg.gif) no-repeat;}
 .categ_rfont16{font-size:16px; padding-left:15px;}
 
 /* added on 0702 by wenbo */
-.pager_cont { width:162px; line-height:41px; float:right; padding-right:9px;}
+.pager_cont { width:140px; line-height:41px; float:right; padding-right:9px;}
 .pager_cont li{ float:left;}
 .pager_cont li{ color:#fff; text-align:center; height:16px; padding:13px 0px 0 8px; }
 .pager_cont li a{ color:#fff; background:#434343; height:16px; line-height:16px; display:block; text-decoration:none; }
